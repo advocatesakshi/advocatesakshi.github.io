@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --coffee: #4B2E2E;
+  --cream: #F5EFE6;
+  --gold: #C8A951;
+  --burgundy: #7A1720;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: var(--cream); color: #1f2937; }
+
+.gold-accent { color: var(--gold); }
+.divider-gold { border-color: var(--gold); }
+
+.logo-text { font-family: Merriweather, serif; }
+
+/* Hero and utility tweaks for premium feel */
+.btn-gold {
+  background: var(--gold);
+  color: var(--coffee);
+}
+
+/* gentle drop shadow used on hero statues */
+.drop-shadow-2xl { filter: drop-shadow(0 20px 40px rgba(0,0,0,0.35)); }
+
+/* responsive text scaling */
+@media (min-width: 768px){
+  .hero-title { font-size: 3.5rem; }
+}
+
+/* ensure anchor smoothness for large header offsets */
+:target { scroll-margin-top: 96px; }
+
+/* Soft rounded containers and card styles */
+.card-soft { background: white; border-radius: 1rem; box-shadow: 0 10px 30px rgba(16,24,40,0.06); }
+.muted-green { background-color: #1f7a4f; }
